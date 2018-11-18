@@ -1,0 +1,49 @@
+\chapter{Características de hardware}
+
+
+\section {Drones}
+La investigación toma como base los drones Parrot Bebop 2 [12], los cuales son usados principalmente por público general con fines recreativos. Debido a esto poseen un diseño resistente y simple, además de contar con una cámara de buena calidad, GPS y sistemas de estabilización de vuelo. Estas características resultaron de utilidad a la hora de desarrollar la aplicación.
+Sin embargo, este modelo también plantea serias limitaciones, en particular, no es un modelo que esté pensado para que ejecute programas por su propia cuenta. Si bien existe un SDK provisto por Parrot que permite programar al dron, todas las aplicaciones existentes se basan en controlarlo a distancia, ya sea por medio de una computadora o un smartphone. La aplicación más notable que existe para los Bebop 2 es FreeFlightPro [13], una aplicación para smartphones que le permite a los usuarios controlar el dron de forma manual. La falta de aplicaciones que ejecutan su código desde el dron mismo se debe en gran parte a su sistema operativo y a su arquitectura ARM7. Los Bebop 2 vienen de fábrica con un sistema operativo embebido Unix BusyBox [14], el cuál está configurado para limitar lo más posible a los usuarios que intenten realizarle modificaciones al dron. Entre otras limitaciones los Bebop 2 no pueden conectarse a Internet, solo permiten el acceso a una parte limitada de la memoria y no pueden instalar o compilar programas nuevos. Esto último resulta especialmente problemático ya que obliga a compilar los programas en otros sistemas y la arquitectura ARM7 implica que solo se pueden usar algunos dispositivos específicos para compilar los programas que se quieren instalar en el dron. En futuras secciones se discutirán las soluciones propuestas por el equipo para superar estas limitaciones y la influencia que tuvieron sobre el proyecto en general.
+A continuación se describen las principales especificaciones del dron [15]:
+
+\begin{table}[h!]
+	\centering
+	\caption{Características del dron Parrot Bebop 2.}
+	\label{tab:comp}
+	\begin{tabular}{|c|c|}
+		\hline
+		Característica & Descripción\\
+		\hline
+		Sistema de rotores & Cuatro rotores, tres hojas por cada hélice - 5 centímetros de diámetro -. Son de plástico flexible, bastante resistentes y fácilmente reemplazables \\
+		Velocidad máxima horizontal & 18m/s \\
+		Velocidad de ascenso máxima & 6m/s \\
+		Alcance de señal & 300 metros \\
+		Batería & 2.700 mAh \\
+		Autonomía & 25 minutos de vuelo \\
+		Cámara & 14 megapíxeles \\
+		Dimensiones & 33 x 30 x 10 centímetros \\
+		Memoria (accesible por usuarios) & 8GB \\
+		Peso & 480 gramos \\
+		Sistema Operativo & Linux (Busybox) \\
+		Arquitectura de CPU & ARMv7 \\
+		Sensores (accesibles vía el SDK) & Cámara digital (1080pi)
+		Sensor GPS
+		Sensor de altura (ultrasonido) \\
+		Sensores (no accesibles vía SDK) & Acelerómetro
+		Giroscopio \\
+		\hline
+	\end{tabular}
+\end{table}
+
+
+
+
+\section {Simuladores}
+Para evaluar y testear los programas desarrollados en este proyecto era necesario usar simuladores ya que no resulta conveniente probar código en desarrollo en un dron real. Esto permite proteger tanto al dron como a las personas que se encuentren en la cercanía. También ayuda a la hora de realizar la evaluación experimental ya que permite realizar pruebas automatizadas de forma eficiente. 
+
+Se optó por usar Sphinx [16], el simulador para drones oficial de Parrot. Sphinx es un simulador basado en el software de robótica Gazebo para ambientes linux de 64 bits, y una tarjeta gráfica con soporte de OpenGL 3.0. En caso de querer hacer uso de la cámara frontal del dron es recomendable contar con una tarjeta gráfica GeForce 1060 Ti o superior. Parrot también provee firmwares que simulan modelos específicos de sus drones, incluyendo el Bebop 2, que se pueden cargar en Sphinx.
+Sphinx también permite crear mundos (entornos de simulación) y drones por medio de archivos de configuración. Para agregar varios drones a la simulación se editan estos archivos, donde además es posible determinar las características de los mismos, incluyendo su cámara y su batería.
+Es posible configurar los drones simulados para que se apropien de una interfaz wifi con la que cuente el equipo sobre el que se ejecuta la simulación para así poder enviarle órdenes. Además cada dron en la simulación genera una interfaz virtual por la que también se puede establecer la comunicación.
+Sphinx facilita el desarrollo de aplicaciones para drones, pudiendo optar entre distintas opciones de desarrollo como lo son el SDK [17] de Parrot u otras librerías de terceros como pyparrot [18].    
+La principal desventaja del simulador es que requiere muchos recursos de GPU para ejecutar las simulaciones: en general las computadoras de las que disponía el equipo no podían soportar más de 2 drones simulados a la vez. Además, Sphinx presenta serios problemas a la hora de simular varios drones en la misma instancia del programa, en particular los comandos que controlan el movimiento de los drones no funcionan de forma apropiada. Esto se pudo solucionar ejecutando cada dron en una instancia separada de Sphinx, sin embargo esta solución agrava el problema del consumo de recursos.
+Para poder simular una mayor cantidad de drones es posible utilizar varias computadoras conectadas en una misma red, cada una con sus propios drones simulados estableciendo un canal de comunicación entre las computadoras.
