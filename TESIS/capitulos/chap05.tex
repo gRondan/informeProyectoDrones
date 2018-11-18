@@ -10,7 +10,8 @@ En la siguiente sección se detalla el funcionamiento de la máquina de estados.
 	\caption{Máquina de estados simplificada.}
 \end{figure}
 
-\section{Configuración inicial}
+\section{Máquina de Estados}
+\subsection{Configuración inicial}
 
 \begin{figure}[h!]
 	\label{fig:comp}
@@ -30,7 +31,7 @@ la altura a la que se mantiene el vuelo durante la exploración
 activar funcionalidades complementarias como streaming de la exploración y el movimiento con rotación del dron
 También se ejecuta un algoritmo de sincronización que permite a los drones comenzar la ejecución del resto de la máquina de estados al mismo tiempo. Esto permite que el tiempo de misión total de todos los drones sea el mismo y coordinar los tiempos en los que se deben visitar los puntos de interés.
 Una vez concluida la etapa de inicio se procede al estado Despegar, donde se le envía al dron la instrucción de despegue y se determina cuál será el siguiente estado. 
-\section {Exploración}
+\subsection {Exploración}
 
 \begin{figure}[h!]
 	\label{fig:comp}
@@ -43,7 +44,7 @@ En el estado Explorar es donde se determina cual es el siguiente movimiento a re
 Una vez determinado el siguiente movimiento a realizar se ejecuta el estado Desplazarse, donde se le envía al dron la instrucción de moverse hacia la posición calculada.
 Al momento de finalizar el desplazamiento el dron cambia al estado Actualizar mapa, donde se registra la posición actual como visitada 
 
-\section {Puntos de interés}
+\subsection {Puntos de interés}
 
 \begin{figure}[h!]
 	\label{fig:comp}
@@ -55,7 +56,7 @@ Cada punto de interés tiene un intervalo de tiempo asociado en el cual debe ser
 
 
 
-Algoritmo de consenso
+\subsubsection{Algoritmo de consenso}
 Paxos es un algoritmo de consenso basado en el envío de mensajes que asegura un consenso entre N procesos participantes siempre y cuando se cumplan algunas condiciones:
 La cantidad de procesos que fallan en algún momento del algoritmo no sea mayor o igual a N/2.
 Los procesos pueden tener fallos pero no envían información incorrecta de forma intencional (no se producen fallos bizantinos).
@@ -90,7 +91,7 @@ Cuando se visita el punto de interés se reinicia el timer con el tiempo configu
 
 
 
-\section {Batería}
+\subsection {Batería}
 
 
 \begin{figure}[h!]
@@ -104,7 +105,7 @@ Para esto se realiza un chequeo del porcentaje de carga de la  batería y en cas
 A su vez también se realiza un control sobre la distancia entre el dron y la estación de carga y se compara la misma con la cantidad de movimientos necesarios para volver a la estación de carga de forma directa. En caso de que la cantidad de movimientos para volver a la estación de carga sea igual a la cantidad de movimientos restantes más una cantidad predefinida de movimientos se pasa al estado Bateria crítica, donde el dron abandona la exploración y se dirige a la estación de carga. 
 Para calcular la distancia a la estación de carga y el camino a seguir se hace uso del algoritmo A*(A aster).
 Una vez que el dron llega a la estación de carga pasa al estado Aterrizar, donde se ejecutan las instrucciones para realizar el procedimiento de aterrizaje seguro para más adelante activar el estado Cargar batería. Cuando se termina la carga de la batería el dron vuelve a realizar las tareas de exploración.
-\section {Coordinación}
+\subsection {Coordinación}
 
 
 \begin{figure}[h!]
@@ -116,7 +117,7 @@ Una vez que el dron llega a la estación de carga pasa al estado Aterrizar, dond
 En esta etapa se realizan las actividades de comunicación de la flota de exploración para optimizar la estrategia a seguir.
 Cuando un dron se encuentra en el estado Enviar Mensajes se comunica por medio de la conexión establecida en la Configuración Inicial con los demás miembros de la flota para transmitirle la zona del mapa en la que se encuentra actualmente. De esta forma los demás drones marcan la zona recibida como visitada.
 Por otra parte se controla el estado de la vigilancia de los puntos de interés asignadas a otros miembros de la flota, para esto al momento de asignar un punto de interés a un dron se programa una tarea de chequeo a realizar en un período de tiempo preestablecido (el mismo es configurable) cambiando al estado Chequear Status Misión, donde todos los drones disponibles buscan establecer una conexión con el dron que tiene la misión de vigilar la zona asignada. Cuando se recibe una respuesta satisfactoria del dron que se encuentra encargado de la misión se les envía un mensaje a los demás drones para avisarles que la misión está siendo ejecutada con éxito. En caso de que ningún miembro de la flota pueda recibir una respuesta por parte del dron con la misión asignada se determina que la misma fue cancelada y se pasa al estado Asignar POI para reasignar el punto de interés a un nuevo dron disponible.
-\section {Sin conectividad}
+\subsection {Sin conectividad}
 
 
 \begin{figure}[h!]
@@ -132,7 +133,7 @@ En el estado Ping Sin Conexión se chequea si se recupero la conexión buscando 
 Si el dron previo a la pérdida de la conectividad tenía asignado un punto de interés se ejecuta el estado Cancelar Misión, donde se enviá un mensaje a los demás drones comunicando que se debe reasignar el punto de interés para posteriormente ejecutar las acciones de Puntos de Interés descritas anteriormente.
 En caso de no recuperar la conectividad y llegar a la base se ejecuta el estado Aterrizar para finalizar su ejecución del sistema.
 Al igual que cuando se tiene conexión se realiza un control sobre el porcentaje de carga de la batería y se ejecuta el estado Batería Crítica de la misma forma que se describe en la sección Batería.
-\section {Fin}
+\subsection {Fin}
 
 
 \begin{figure}[h!]
@@ -143,9 +144,9 @@ Al igual que cuando se tiene conexión se realiza un control sobre el porcentaje
 
 
 Al finalizar la ejecución del sistema se procede al aterrizaje del dron en la base para posteriormente ejecutar el estado Fin donde se cierra el canal de comunicación y se registra la información relevante de la ejecución en archivos con formato csv.
-Funcionalidades complementarias
+\section{Funcionalidades complementarias}
 El sistema desarrollado cuenta con funcionalidades opcionales que se incorporaron en función de considerarse útiles para algunos escenarios de uso particulares.
-Streaming
+\subsection{Streaming}
 En caso de querer hacer uso del sistema para la vigilancia de un terreno es de gran utilidad poder visualizar desde un centro de control los datos obtenidos por la cámara de los drones.
 Por esta razón se incorpora la funcionalidad de poder transmitir en vivo la grabación realizada durante la exploración. Para esto basta con estar conectado a la red wifi en la que se encuentra el dron y recibir los datos enviados por el mismo mediante una conexión UDP en el puerto 4444, estos datos pueden ser visualizados directamente haciendo uso de un reproductor de video (fue verificado con el programa VLC).
 Modo de navegación
@@ -153,9 +154,9 @@ Al momento de determinar el modo en el que los movimientos de los drones se pued
 En función del tiempo necesario para ejecutar los movimientos de rotación se optó por incluir como configuración por defecto no realizar los mismos.
 En caso de querer realizar giros en los desplazamientos, lo cual puede resultar útil si se desea activar el streaming de la exploración, es posible activarlo configurando el parámetro correspondiente.
 
-Auditoría de la exploración
+\subsection{Auditoría de la exploración}
 Para determinar si la ejecución del sistema cumplió con los objetivos establecidos se incorpora la posibilidad de almacenar en cada dron de la flota de exploración un archivo que contiene estadśiticas detallando el porcentaje de mapa cubierto, la cantidad de puntos de interés visitados y los tiempos de respuesta para las mismas. 
 Esta funcionalidad es particularmente útil para la evaluación experimental realizada en la investigación.
-Altura de vuelo
+\subsection{Altura de vuelo}
 Dependiendo de las características del terreno a explorar puede ser necesario configurar a qué altura se debe realizar la exploración. Configurar la altura de vuelo consiste en asignar el rango de altura permitido en metros.
 Para determinar la altura a la que se encuentra el dron se utiliza la información publicada por el mismo, la cual hace uso de un sensor para determinar la misma siempre que esta sea menor a 5 metros y cálculos con el GPS para el resto de los casos. 

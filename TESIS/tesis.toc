@@ -14,35 +14,41 @@
 \contentsline {section}{\numberline {4.3}Lenguaje de programaci\IeC {\'o}n}{16}{section.4.3}
 \contentsline {section}{\numberline {4.4}Conectividad entre los drones}{17}{section.4.4}
 \contentsline {section}{\numberline {4.5}Control de posicionamiento}{19}{section.4.5}
-\contentsline {section}{\numberline {4.6}Ubicaci\IeC {\'o}n relativa a movimientos}{20}{section.4.6}
-\contentsline {section}{\numberline {4.7}Ubicaci\IeC {\'o}n por GPS}{20}{section.4.7}
-\contentsline {section}{\numberline {4.8}Ubicaci\IeC {\'o}n por se\IeC {\~n}al Wifi}{20}{section.4.8}
-\contentsline {section}{\numberline {4.9}Ubicaci\IeC {\'o}n por procesamiento de im\IeC {\'a}genes}{21}{section.4.9}
-\contentsline {chapter}{\numberline {5}Caracter\IeC {\'\i }sticas del sistema}{23}{chapter.5}
-\contentsline {section}{\numberline {5.1}Configuraci\IeC {\'o}n inicial}{24}{section.5.1}
-\contentsline {section}{\numberline {5.2}Exploraci\IeC {\'o}n}{25}{section.5.2}
-\contentsline {section}{\numberline {5.3}Puntos de inter\IeC {\'e}s}{25}{section.5.3}
-\contentsline {section}{\numberline {5.4}Bater\IeC {\'\i }a}{29}{section.5.4}
-\contentsline {section}{\numberline {5.5}Coordinaci\IeC {\'o}n}{30}{section.5.5}
-\contentsline {section}{\numberline {5.6}Sin conectividad}{30}{section.5.6}
-\contentsline {section}{\numberline {5.7}Fin}{31}{section.5.7}
-\contentsline {chapter}{\numberline {6}Experimentaci\IeC {\'o}n}{34}{chapter.6}
-\contentsline {section}{\numberline {6.1}Casos de prueba}{34}{section.6.1}
-\contentsline {chapter}{\numberline {7}Conclusiones}{40}{chapter.7}
-\contentsline {chapter}{\numberline {8}Consideraciones finales}{42}{chapter.8}
-\contentsline {section}{\numberline {8.1}T\IeC {\'\i }tulo de secci\IeC {\'o}n}{42}{section.8.1}
-\contentsline {chapter}{Referencias bibliogr\IeC {\'a}ficas}{44}{chapter*.17}
-\contentsline {chapter}{Glosario}{44}{chapter*.17}
-\contentsline {chapter}{\textbf {Ap\IeC {\'e}ndices}}{45}{section*.18}
+\contentsline {subsection}{\numberline {4.5.1}Ubicaci\IeC {\'o}n relativa a movimientos}{20}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Ubicaci\IeC {\'o}n por GPS}{20}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Ubicaci\IeC {\'o}n por se\IeC {\~n}al Wifi}{20}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.5.4}Ubicaci\IeC {\'o}n por procesamiento de im\IeC {\'a}genes}{21}{subsection.4.5.4}
+\contentsline {chapter}{\numberline {5}Caracter\IeC {\'\i }sticas del sistema}{22}{chapter.5}
+\contentsline {section}{\numberline {5.1}M\IeC {\'a}quina de Estados}{23}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Configuraci\IeC {\'o}n inicial}{23}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Exploraci\IeC {\'o}n}{24}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Puntos de inter\IeC {\'e}s}{24}{subsection.5.1.3}
+\contentsline {subsubsection}{Algoritmo de consenso}{25}{section*.8}
+\contentsline {subsection}{\numberline {5.1.4}Bater\IeC {\'\i }a}{28}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.5}Coordinaci\IeC {\'o}n}{29}{subsection.5.1.5}
+\contentsline {subsection}{\numberline {5.1.6}Sin conectividad}{29}{subsection.5.1.6}
+\contentsline {subsection}{\numberline {5.1.7}Fin}{30}{subsection.5.1.7}
+\contentsline {section}{\numberline {5.2}Funcionalidades complementarias}{31}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Streaming}{31}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Auditor\IeC {\'\i }a de la exploraci\IeC {\'o}n}{31}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Altura de vuelo}{32}{subsection.5.2.3}
+\contentsline {chapter}{\numberline {6}Experimentaci\IeC {\'o}n}{33}{chapter.6}
+\contentsline {section}{\numberline {6.1}Casos de prueba}{33}{section.6.1}
+\contentsline {chapter}{\numberline {7}Conclusiones}{39}{chapter.7}
+\contentsline {chapter}{\numberline {8}Consideraciones finales}{41}{chapter.8}
+\contentsline {section}{\numberline {8.1}T\IeC {\'\i }tulo de secci\IeC {\'o}n}{41}{section.8.1}
+\contentsline {chapter}{Referencias bibliogr\IeC {\'a}ficas}{43}{chapter*.18}
+\contentsline {chapter}{Glosario}{43}{chapter*.18}
+\contentsline {chapter}{\textbf {Ap\IeC {\'e}ndices}}{44}{section*.19}
 \ttl@change@i {\@ne }{chapter}{13pt}{}{ Apéndice\ \thecontentslabel \quad }{}{\titlerule *[1pc]{.}\contentspage }\relax 
 \ttl@change@v {chapter}{}{}{}\relax 
-\contentsline {chapter}{\numberline {1}Datos procesados}{46}{appendix.Alph1}
-\contentsline {chapter}{\numberline {2}Im\IeC {\'a}genes remasterizadas}{47}{appendix.Alph2}
-\contentsline {chapter}{\numberline {3}Entrevistas desgrabadas}{48}{appendix.Alph3}
+\contentsline {chapter}{\numberline {1}Datos procesados}{45}{appendix.Alph1}
+\contentsline {chapter}{\numberline {2}Im\IeC {\'a}genes remasterizadas}{46}{appendix.Alph2}
+\contentsline {chapter}{\numberline {3}Entrevistas desgrabadas}{47}{appendix.Alph3}
 \ttl@change@i {\@ne }{chapter}{0pt}{\vspace *{0.45cm}}{\thecontentslabel \quad }{}{\bfseries \hfill \contentspage }\relax 
 \ttl@change@v {chapter}{}{}{}\relax 
-\contentsline {chapter}{\textbf {Anexos}}{49}{section*.19}
+\contentsline {chapter}{\textbf {Anexos}}{48}{section*.20}
 \ttl@change@i {\@ne }{chapter}{13pt}{}{ Anexo\ \thecontentslabel \quad }{}{\titlerule *[1pc]{.}\contentspage }\relax 
 \ttl@change@v {chapter}{}{}{}\relax 
-\contentsline {chapter}{\numberline {1}Material legislativo}{50}{appendix.Anexo.1}
+\contentsline {chapter}{\numberline {1}Material legislativo}{49}{appendix.Anexo.1}
 \contentsfinish 

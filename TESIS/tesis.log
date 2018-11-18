@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2018.11.10)  18 NOV 2018 12:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2018.11.10)  18 NOV 2018 13:10
 entering extended mode
 **./tesis.tex
 (tesis.tex
@@ -1273,7 +1273,7 @@ LaTeX Info: Redefining \nameref on input line 41.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<imagenes/logo_udelar.pdf, id=156, 207.28883pt x 59.6364pt>
+<imagenes/logo_udelar.pdf, id=176, 207.28883pt x 59.6364pt>
 File: imagenes/logo_udelar.pdf Graphic file (type pdf)
 <use imagenes/logo_udelar.pdf>
 Package pdftex.def Info: imagenes/logo_udelar.pdf  used on input line 86.
@@ -1435,36 +1435,33 @@ Cap\'{\i }tulo 4.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [19]
-[20]) [21] [22]
+[20]) [21]
 \openout2 = `capitulos/chap05.aux'.
 
  (capitulos/chap05.tex
 Cap\'{\i }tulo 5.
-<imagenes/chap5/image1.png, id=364, 753.81625pt x 391.4625pt>
+<imagenes/chap5/image1.png, id=385, 753.81625pt x 391.4625pt>
 File: imagenes/chap5/image1.png Graphic file (type png)
 <use imagenes/chap5/image1.png>
 Package pdftex.def Info: imagenes/chap5/image1.png  used on input line 9.
 (pdftex.def)             Requested size: 318.67209pt x 165.4883pt.
-<imagenes/chap5/image2.png, id=366, 332.24126pt x 81.30376pt>
+<imagenes/chap5/image2.png, id=387, 332.24126pt x 81.30376pt>
 File: imagenes/chap5/image2.png Graphic file (type png)
 <use imagenes/chap5/image2.png>
-Package pdftex.def Info: imagenes/chap5/image2.png  used on input line 17.
+Package pdftex.def Info: imagenes/chap5/image2.png  used on input line 18.
 (pdftex.def)             Requested size: 318.67209pt x 77.98743pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23
+ [22
 
 
 
  <./imagenes/chap5/image1.png>]
-<imagenes/chap5/image3.png, id=373, 532.99126pt x 81.30376pt>
+<imagenes/chap5/image3.png, id=394, 532.99126pt x 81.30376pt>
 File: imagenes/chap5/image3.png Graphic file (type png)
 <use imagenes/chap5/image3.png>
-Package pdftex.def Info: imagenes/chap5/image3.png  used on input line 37.
+Package pdftex.def Info: imagenes/chap5/image3.png  used on input line 38.
 (pdftex.def)             Requested size: 318.67209pt x 48.61266pt.
 
 
@@ -1473,65 +1470,62 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [24 <./imagenes/chap5/image2.png>]
-<imagenes/chap5/image4.png, id=380, 693.59125pt x 221.82875pt>
+ [23 <./imagenes/chap5/image2.png>]
+<imagenes/chap5/image4.png, id=401, 693.59125pt x 221.82875pt>
 File: imagenes/chap5/image4.png Graphic file (type png)
 <use imagenes/chap5/image4.png>
-Package pdftex.def Info: imagenes/chap5/image4.png  used on input line 50.
+Package pdftex.def Info: imagenes/chap5/image4.png  used on input line 51.
 (pdftex.def)             Requested size: 318.67209pt x 101.9206pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[25 <./imagenes/chap5/image3.png>] [26 <./imagenes/chap5/image4.png>] [27]
-[28]
-<imagenes/chap5/image5.png, id=402, 693.59125pt x 221.82875pt>
+[24 <./imagenes/chap5/image3.png>] [25 <./imagenes/chap5/image4.png>] [26]
+[27]
+<imagenes/chap5/image5.png, id=424, 693.59125pt x 221.82875pt>
 File: imagenes/chap5/image5.png Graphic file (type png)
 <use imagenes/chap5/image5.png>
-Package pdftex.def Info: imagenes/chap5/image5.png  used on input line 98.
+Package pdftex.def Info: imagenes/chap5/image5.png  used on input line 99.
 (pdftex.def)             Requested size: 318.67209pt x 101.9206pt.
- [29 <./imagenes/chap5/image5.png>]
-<imagenes/chap5/image6.png, id=409, 563.10374pt x 81.30376pt>
+ [28 <./imagenes/chap5/image5.png>]
+<imagenes/chap5/image6.png, id=431, 563.10374pt x 81.30376pt>
 File: imagenes/chap5/image6.png Graphic file (type png)
 <use imagenes/chap5/image6.png>
-Package pdftex.def Info: imagenes/chap5/image6.png  used on input line 112.
+Package pdftex.def Info: imagenes/chap5/image6.png  used on input line 113.
 (pdftex.def)             Requested size: 318.67209pt x 46.01112pt.
-<imagenes/chap5/image7.png, id=410, 773.89125pt x 269.005pt>
+<imagenes/chap5/image7.png, id=432, 773.89125pt x 269.005pt>
 File: imagenes/chap5/image7.png Graphic file (type png)
 <use imagenes/chap5/image7.png>
-Package pdftex.def Info: imagenes/chap5/image7.png  used on input line 124.
+Package pdftex.def Info: imagenes/chap5/image7.png  used on input line 125.
 (pdftex.def)             Requested size: 318.67209pt x 110.76889pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[30 <./imagenes/chap5/image6.png>]
-<imagenes/chap5/image8.png, id=417, 357.335pt x 81.30376pt>
+[29 <./imagenes/chap5/image6.png>]
+<imagenes/chap5/image8.png, id=439, 357.335pt x 81.30376pt>
 File: imagenes/chap5/image8.png Graphic file (type png)
 <use imagenes/chap5/image8.png>
-Package pdftex.def Info: imagenes/chap5/image8.png  used on input line 140.
+Package pdftex.def Info: imagenes/chap5/image8.png  used on input line 141.
 (pdftex.def)             Requested size: 318.67209pt x 72.51021pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[31 <./imagenes/chap5/image7.png>]
+[30 <./imagenes/chap5/image7.png>]
 (/home/giovani/.miktex/texmfs/install/tex/latex/ucs/uni-1.def
 File: uni-1.def 2013/05/13 UCS: Unicode data U+0100..U+01FF
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [32 <./imagenes/chap5/image8.png>]) [33]
+) [31 <./imagenes/chap5/image8.png>]) [32]
 \openout2 = `capitulos/chap06.aux'.
 
  (capitulos/chap06.tex
 Cap\'{\i }tulo 6.
-[34
+[33
 
 
 
 ]
-<imagenes/chap6/image1.png, id=439, 269.005pt x 317.185pt>
+<imagenes/chap6/image1.png, id=461, 269.005pt x 317.185pt>
 File: imagenes/chap6/image1.png Graphic file (type png)
 <use imagenes/chap6/image1.png>
 Package pdftex.def Info: imagenes/chap6/image1.png  used on input line 17.
@@ -1540,7 +1534,7 @@ Package pdftex.def Info: imagenes/chap6/image1.png  used on input line 17.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imagenes/chap6/image2.png, id=440, 388.45125pt x 427.5975pt>
+<imagenes/chap6/image2.png, id=462, 388.45125pt x 427.5975pt>
 File: imagenes/chap6/image2.png Graphic file (type png)
 <use imagenes/chap6/image2.png>
 Package pdftex.def Info: imagenes/chap6/image2.png  used on input line 26.
@@ -1548,7 +1542,7 @@ Package pdftex.def Info: imagenes/chap6/image2.png  used on input line 26.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imagenes/chap6/image3.png, id=441, 423.5825pt x 451.6875pt>
+<imagenes/chap6/image3.png, id=463, 423.5825pt x 451.6875pt>
 File: imagenes/chap6/image3.png Graphic file (type png)
 <use imagenes/chap6/image3.png>
 Package pdftex.def Info: imagenes/chap6/image3.png  used on input line 35.
@@ -1556,13 +1550,13 @@ Package pdftex.def Info: imagenes/chap6/image3.png  used on input line 35.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[35]
+[34]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [36 <./imagenes/chap6/image1.png>] [37 <./imagenes/chap6/image2.png>]
+ [35 <./imagenes/chap6/image1.png>] [36 <./imagenes/chap6/image2.png>]
 Underfull \vbox (badness 7030) has occurred while \output is active []
 
- [38 <./imagenes/chap6/image3.png>]
+ [37 <./imagenes/chap6/image3.png>]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 146.
 
 
@@ -1574,7 +1568,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 
 (/home/giovani/.miktex/texmfs/install/tex/latex/ucs/uni-33.def
 File: uni-33.def 2013/05/13 UCS: Unicode data U+2100..U+21FF
-)) [39]
+)) [38]
 \openout2 = `capitulos/chap07.aux'.
 
 
@@ -1583,17 +1577,17 @@ Cap\'{\i }tulo 7.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40
+ [39
 
 
 
 ])
-[41]
+[40]
 \openout2 = `capitulos/chap08.aux'.
 
  (capitulos/chap08.tex
 Cap\'{\i }tulo 8.
-<imagenes/chap4/x_vs_y.png, id=476, 578.16pt x 413.3844pt>
+<imagenes/chap4/x_vs_y.png, id=498, 578.16pt x 413.3844pt>
 File: imagenes/chap4/x_vs_y.png Graphic file (type png)
 <use imagenes/chap4/x_vs_y.png>
 Package pdftex.def Info: imagenes/chap4/x_vs_y.png  used on input line 29.
@@ -1601,11 +1595,11 @@ Package pdftex.def Info: imagenes/chap4/x_vs_y.png  used on input line 29.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [42
+) [41
 
 
 
-] [43 <./imagenes/chap4/x_vs_y.png (PNG copy)>] (tesis.bbl
+] [42 <./imagenes/chap4/x_vs_y.png (PNG copy)>] (tesis.bbl
 
 Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
@@ -1615,25 +1609,25 @@ Package glossaries Warning: Empty glossary for \printnoidxglossary[type={glosar
 io}]. Rerun may be required (or you may have forgotten to use commands like \gl
 s) on input line 122.
 
-[44
+[43
 
 
 
-] [45
+] [44
 
 ] (apendice/apendice_A.tex
 Ap\'{e}ndice 1.
-) (apendice/apendice_B.tex [46
+) (apendice/apendice_B.tex [45
 
 ]
 Ap\'{e}ndice 2.
-) (apendice/apendice_C.tex [47
+) (apendice/apendice_C.tex [46
 
 ]
 Ap\'{e}ndice 3.
-) [48
+) [47
 
-] [49
+] [48
 
 ] (anexo/anexo_A.tex
 Anexo 1.
@@ -1646,7 +1640,7 @@ Anexo 1.
 
  
 AED: lastpage setting LastPage
-[50
+[49
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 136.
@@ -1666,7 +1660,7 @@ LaTeX Info: Redefining \% on input line 5.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 136.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 136.
 Package rerunfilecheck Info: File `tesis.out' has not changed.
-(rerunfilecheck)             Checksum: F3C7FB570C4E2CED16ED1BE3941C84C9;2383.
+(rerunfilecheck)             Checksum: 9F6D021692A30A441AD9C4056E01263B;2825.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1674,13 +1668,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 136.
  ) 
 Here is how much of TeX's memory you used:
- 33851 strings out of 494889
- 626610 string characters out of 3178524
- 790878 words of memory out of 3000000
- 36624 multiletter control sequences out of 15000+200000
- 11767 words of font info for 44 fonts, out of 3000000 for 9000
+ 33844 strings out of 494889
+ 627921 string characters out of 3178524
+ 790806 words of memory out of 3000000
+ 36612 multiletter control sequences out of 15000+200000
+ 12074 words of font info for 45 fonts, out of 3000000 for 9000
  1 hyphenation exception out of 8191
- 76i,9n,94p,2398b,692s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 76i,9n,94p,2398b,694s stack positions out of 5000i,500n,10000p,200000b,50000s
  </home/giovani/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi720/cmbcsc10
 .pk></home/giovani/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10
 .pfb></home/giovani/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx1
@@ -1693,9 +1687,9 @@ mr17.pfb></home/giovani/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/c
 mr8.pfb></home/giovani/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cm
 sy10.pfb></home/giovani/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/c
 mti12.pfb>
-Output written on tesis.pdf (62 pages, 412028 bytes).
+Output written on tesis.pdf (61 pages, 414949 bytes).
 PDF statistics:
- 582 PDF objects out of 1000 (max. 8388607)
- 115 named destinations out of 1000 (max. 500000)
- 382 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 604 PDF objects out of 1000 (max. 8388607)
+ 120 named destinations out of 1000 (max. 500000)
+ 422 words of extra memory for PDF output out of 10000 (max. 10000000)
 
